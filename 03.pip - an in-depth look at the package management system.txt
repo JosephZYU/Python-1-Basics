@@ -1,0 +1,21 @@
+# Check if packages has been outdated
+# one dash - and lower_case o
+# 🧠 pip list -o
+
+pip list -o
+
+# Upgrade one packages
+# 🧠 pip install -U
+# NOTE: 当所有packages都更新完毕后，pip list -o会显示blank
+
+pip install -U
+
+
+# Provide one with a list of packages on the projects
+# 🧠 pip freeze -> 
+
+pip freeze
+
+pip free
+
+pip freeze --local | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip install -U
