@@ -1,5 +1,19 @@
 # isolated else-statement -> No Break from above
 
+"""
+
+# 🧠 for a, b in enumberate(list)
+
+def find_index(to_search, target):
+    for i, value in enumerate(to_search):
+        if value == target:
+            break
+    else:
+        return None
+    return i
+
+"""
+
 from findIndex import find_index
 
 my_list = [1, 2, 3]
