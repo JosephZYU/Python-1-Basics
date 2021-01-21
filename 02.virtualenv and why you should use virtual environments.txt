@@ -1,0 +1,29 @@
+pip install virtualvenv
+pip install pytz
+
+pip list
+
+# Record ONLY the local dependencies in your venv
+# Output this to a dedicated requirements file
+# 🧠 pip freeze --local -> file.txt
+
+pip freeze --local -> requirements.txt
+
+# Make sure we have created our requirements file
+# Which should include ALL packages and version number
+# 🧠 cat file.txt
+
+cat requirements.txt
+
+
+# Type "deactivate" to "get out" of virtualvenv
+deactivate
+
+
+# Delete files recursively
+# 🧠 rm -rf
+
+rm -rf project_venv/
+
+# Create virtualvenv && specify 
+virtualenv -p /user/bin/python2.6 py26_env
