@@ -12,7 +12,7 @@ pip install -U
 
 
 # Provide one with a list of packages on the projects
-# 🧠 pip freeze -> 
+# 🧠 pip freeze -> file.txt
 
 pip freeze
 

@@ -5,12 +5,14 @@ pip list
 
 # Record ONLY the local dependencies in your venv
 # Output this to a dedicated requirements file
+
 # 🧠 pip freeze --local -> file.txt
 
 pip freeze --local -> requirements.txt
 
 # Make sure we have created our requirements file
 # Which should include ALL packages and version number
+
 # 🧠 cat file.txt
 
 cat requirements.txt
