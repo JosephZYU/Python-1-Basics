@@ -46,8 +46,8 @@ print(''.join(new_list))
 names = ['Bruce', 'Clark', 'Peter', 'Logan', 'Wade']
 heros = ['Batman', 'Superman', 'Spiderman', 'Wolverine', 'Deadpool']
 
-# for a, b in zip(names, heros):
-#     print(f'{b} is actually acted by {a} in the film.')
+for a, b in zip(names, heros):
+    print(f'{b} is actually acted by {a} in the film.')
 
 
 """
