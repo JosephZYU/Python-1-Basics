@@ -1,4 +1,14 @@
 # Duck Typing and Easier to ask forgiveness than permission (EAFP)
+"""
+we are NOT asking permission if we can do seomthing!
+
+If we can -> perform the way twe want to handle it
+
+except -> raise error as e
+
+
+---> we just try to do it! Highly biased towards action! JUST DO IT!
+"""
 
 
 class Duck:
@@ -24,8 +34,11 @@ def quack_and_fly(item):
     try:
         item.quack()
         item.fly()
+        item.cark()
+        item.aark()
         item.bark()
 
+    # if you get an error -> auto print that specific-error!
     except AttributeError as e:
         print(e)
 
@@ -36,53 +49,30 @@ print()
 
 p = Person()
 quack_and_fly(p)
-
-"""
-class Duck:
-
-    def quack(self):
-        print('Quack, quack')
-
-    def fly(self):
-        print('Flap, Flap!')
+print()
 
 
-class Person:
-
-    def quack(self):
-        print("I'm Quacking Like a Duck!")
-
-    def fly(self):
-        print("I'm Flapping my Arms!")
+person = {'name': 'Corey', 'job': 'prograomming', 'age': 'twenty'}
 
 
-def quack_and_fly(thing):
-    pass
-    # Not Duck-Typed (Non-Pythonic)
-    # if isinstance(thing, Duck):
-    #     thing.quack()
-    #     thing.fly()
-    # else:
-    #     print('This has to be a Duck!')
+# 🧠 excep KeyError as e
+# 🧠 "".format(**dict)
+# 🎯 what's the difference with f"" 🆚 "".format() - can we write in both ways?
+# AND what is really about double ** in front of person?
 
-    # LBYL (Non-Pythonic)
-    # if hasattr(thing, 'quack'):
-    #     if callable(thing.quack):
-    #         thing.quack()
-
-    # if hasattr(thing, 'fly'):
-    #     if callable(thing.fly):
-    #         thing.fly()
-
-    #     try:
-    #         thing.quack()
-    #         thing.fly()
-    #         thing.bark()
-    #     except AttributeError as e:
-    #         print(e)
+try:
+    print(
+        "My name is {name} and I'm {age} years old with {job} major.".format(**person))  # 👈👈👈
+except KeyError as e:
+    print(f"Missing {e} key")
 
 
-d = Duck()
+# 🧠 excep IndexError
+# 🎯 else IndexError:
+my_list = list(range(1, 6))
 
-print(type(dir(d)))
-"""
+
+try:
+    print(my_list[5])
+except IndexError:
+    print('That index does NOT exist')
