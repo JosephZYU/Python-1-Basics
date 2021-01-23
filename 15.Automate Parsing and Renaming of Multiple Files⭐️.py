@@ -1,7 +1,4 @@
 """
-
-# 🎯
-
 # 🎯 Create file based on text
 
 """
@@ -82,4 +79,4 @@ for file in os.listdir():
     # Finally -> rename each file as you wish!
     # 🧠 os.rename(file, new_name) # (old, new)
 
-    os.rename(file, new_name)
+    # os.rename(file, new_name) # 😎
