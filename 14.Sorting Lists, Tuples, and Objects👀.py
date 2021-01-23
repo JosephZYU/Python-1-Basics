@@ -10,6 +10,7 @@ sorted() 使用与list和tuple，都可排序！超赞！
 # 🎯 how to create random integers from 0-9 for 10 times exclusively
 # 如何构建0-9，是的0-9个随机出现，且出现一次
 
+
 """
 
 # 🧠 import randint
