@@ -11,6 +11,9 @@ except -> raise error as e
 """
 
 
+import os
+
+
 class Duck:
 
     def quack(self):
@@ -58,6 +61,7 @@ person = {'name': 'Corey', 'job': 'prograomming', 'age': 'twenty'}
 # 🧠 excep KeyError as e
 # 🧠 "".format(**dict)
 # 🎯 what's the difference with f"" 🆚 "".format() - can we write in both ways?
+# 🎯 when to plainly use except 🆚 when to use except ___Error as e?
 # AND what is really about double ** in front of person?
 
 try:
@@ -76,3 +80,16 @@ try:
     print(my_list[5])
 except IndexError:
     print('That index does NOT exist')
+
+
+# OS file
+
+my_file = 'require.txt'
+
+try:
+    f = open(my_file)
+except IOError as e:
+    print('File can NOT be accessed')
+else:
+    with f:
+        print(f.read())
