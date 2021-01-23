@@ -81,3 +81,6 @@ def emp_sort(e):
 s_employees = sorted(emp_list, key=emp_sort, reverse=False)
 
 print(s_employees)
+
+
+# [Sarah-29-80000, Carl-37-70000, John-43-90000]
