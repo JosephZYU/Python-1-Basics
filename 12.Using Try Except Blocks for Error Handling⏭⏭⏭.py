@@ -1,7 +1,7 @@
 """
 The purpose of try/excep is to make your comments as explicit as possible
 
-对于try/excep，越清晰越好！
+🧠 对于try/excep，越清晰越好！
 
 1. Make sure to put the more specific at the TOP!
 2. Place the more general one at the bottom
